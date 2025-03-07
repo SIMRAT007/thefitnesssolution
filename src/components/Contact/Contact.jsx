@@ -24,8 +24,7 @@ const Contact = () => {
     setLoading(true); // Show loader on button
 
     try {
-      const response = await axios.post(
-  import.meta.env.VITE_APP_SHEETDB_API_URL, {
+      const response = await axios.post("https://sheetdb.io/api/v1/akh1wmzy0k44z", {
         data: formData,
       });
 
