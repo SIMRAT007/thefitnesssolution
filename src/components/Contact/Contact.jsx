@@ -25,7 +25,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-  import.meta.env.VITE_VERCEL_ENV_SHEETDB_API_URL, {
+  import.meta.env.VITE_APP_SHEETDB_API_URL, {
         data: formData,
       });
 
