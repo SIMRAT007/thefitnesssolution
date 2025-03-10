@@ -34,7 +34,8 @@ const Banner2 = () => {
             viewport={{ once: true }}
             className="flex justify-center gap-6"
           >
-            <button className="primary-btn bg-black text-white">Contact Us For More Info</button>
+            <a href="/contact"> <button className="primary-btn bg-black text-white">Contact Us For More Info</button></a>
+           
             {/* <button className="border-2 border-primary text-primary font-bold px-5 rounded-lg">
               Stay In Touch
             </button> */}
