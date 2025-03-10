@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaDumbbell } from "react-icons/fa";
+import Logo from '../../assets/Logo.png'
 
 const Footer = () => {
   return (
@@ -12,9 +12,9 @@ const Footer = () => {
           title="Company"
           className="inline-flex items-center text-white text-2xl"
         >
-         <FaDumbbell />
+         <img src={Logo} alt="Logo" className="h-20 w-20" />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-200 uppercase flex">
-            The Fitness <p className='text-[#98cd05] ml-1'>Solution</p>
+            The Fitness <p className='text-[#D1A609] ml-1'>Solution</p>
           </span>
         </a>
         <div className="mt-6 lg:max-w-sm">
@@ -33,12 +33,12 @@ const Footer = () => {
         <div className="flex">
           <p className="mr-1 text-gray-500">Phone:</p>
           <a
-            href="tel:850-123-5021"
+            href="tel:9041480932"
             aria-label="Our phone"
             title="Our phone"
             className="transition-colors duration-300 text-gray-500 hover:text-deep-purple-500"
           >
-            98724-13090
+            9041480932
           </a>
         </div>
         <div className="flex">
@@ -49,7 +49,7 @@ const Footer = () => {
             title="Our email"
             className="transition-colors duration-300 text-gray-500 hover:text-deep-purple-500"
           >
-            solutionthefitness@gmail.com
+            thefitnesssolution08@gmail.com
           </a>
         </div>
         <div className="flex">
@@ -109,10 +109,10 @@ const Footer = () => {
       <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
         <li>
           <a
-            href="/"
-            className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+            href="http://simratsingh.netlify.app" target='_blank'
+            className="text-xs text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
           >
-            Made With 💝 by - @simratsingh
+            Made With 💝 by - <a href='http://simratsingh.netlify.app' target='_blank'>@simratsingh</a>
           </a>
         </li>
       </ul>

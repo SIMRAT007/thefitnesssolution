@@ -19,7 +19,7 @@ export default function Certificates() {
               width={image.width}
               height={image.height}
               className={`col-span-2 max-h-12 w-full object-contain lg:col-span-1 ${index >= certificateImages.length - 1 ? 'max-md:col-span-4' : ''}`}
-              style={{ filter: 'invert(1) brightness(2)' }}
+              style={{ filter: 'invert(1) brightness(1)' }}
             />
           ))}
         </div>

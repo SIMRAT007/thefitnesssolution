@@ -17,7 +17,7 @@ export default function Faq() {
             viewport={{ once: true }}
             className=" text-white"
           >
-            <h3 className="text-3xl font-semibold text-white">{faq.question}</h3>
+            <h3 className="text-3xl font-semibold text-gray-400">{faq.question}</h3>
           </motion.p>
           <motion.p
             variants={SlideUp(0.5)}

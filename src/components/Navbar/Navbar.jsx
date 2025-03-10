@@ -1,6 +1,6 @@
 import React from "react";
 import { NavbarMenu } from "../../mockData/data";
-import { FaDumbbell, FaPhone } from "react-icons/fa";
+import Logo from "../../assets/logo.png";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { motion } from "framer-motion";
@@ -19,9 +19,9 @@ const Navbar = () => {
         >
           {/* Logo section */}
           <div className="text-2xl flex items-center gap-2 font-bold uppercase text-white">
-            <FaDumbbell />
-            <p>The Fitness</p>
-            <p style={{ color: '#98cd05' }}>Solution</p>
+            <img src={Logo} alt="Logo" className="h-20 w-20" />
+            {/* <p>The Fitness</p>
+            <p style={{ color: '#D1A609' }}>Solution</p> */}
           </div>
           {/* Menu section */}
           <div className="hidden md:block">
@@ -34,14 +34,14 @@ const Navbar = () => {
                         to={item.link.substring(1)}
                         smooth={true}
                         duration={500}
-                        className="inline-block py-1 px-3 hover:text-[#98cd05] font-semibold cursor-pointer"
+                        className="inline-block py-1 px-3 hover:text-[#D1A609] font-semibold cursor-pointer"
                       >
                         {item.title}
                       </ScrollLink>
                     ) : (
                       <a
                         href={item.link}
-                        className="inline-block py-1 px-3 hover:text-[#98cd05] font-semibold"
+                        className="inline-block py-1 px-3 hover:text-[#D1A609] font-semibold"
                       >
                         {item.title}
                       </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
               <FaPhone />
             </a> */}
             <ScrollLink to="contact" smooth={true} duration={500}>
-              <button className="hover:bg-[#98cd05] text-[#98cd05] font-semibold hover:text-white rounded-md border-2 border-[#98cd05] px-6 py-2 duration-200 hidden md:block cursor-pointer">
+              <button className="hover:bg-[#D1A609] text-[#D1A609] font-semibold hover:text-white rounded-md border-2 border-[#D1A609] px-6 py-2 duration-200 hidden md:block cursor-pointer">
                 Contact Us
               </button>
             </ScrollLink>

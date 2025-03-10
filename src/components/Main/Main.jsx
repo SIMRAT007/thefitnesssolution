@@ -68,8 +68,8 @@ const Home = () => {
   return (
     <div className="relative">
       <Hero />
-      <div className="md:hidden absolute text-xs bg-[#98cd05] text-white text-center py-1 px-1 top-5 flex justify-center items-center m-auto rounded-full shadow-lg left-1/2 transform -translate-x-1/2 ">
-        <div className="text-[#98cd05] font-bold bg-white p-1 rounded-full shadow-lg mr-1 text-xs">
+      <div className="md:hidden absolute text-xs bg-[#D1A609] text-white text-center py-1 px-1 top-5 flex justify-center items-center m-auto rounded-full shadow-lg left-1/2 transform -translate-x-1/2 ">
+        <div className="text-[#D1A609] font-bold bg-white p-1 rounded-full shadow-lg mr-1 text-xs">
           Your's Health
         </div>
         Our Priority 
@@ -83,10 +83,10 @@ const Home = () => {
             alt="User"
             className="w-12 h-12 rounded-full border-2 border-gray-500 shadow-lg"
           />
-          <div className="w-12 h-12 rounded-full bg-[#98cd05] flex items-center justify-center text-white text-lg font-bold shadow-lg">
+          <div className="w-12 h-12 rounded-full bg-[#D1A609] flex items-center justify-center text-white text-lg font-bold shadow-lg">
             <span>👤</span>
           </div>
-          <div className="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center text-white text-lg font-bold shadow-lg">
+          <div className="w-12 h-12 rounded-full bg-[#F9DE7A] flex items-center justify-center text-black text-lg font-bold shadow-lg">
             EF
           </div>
           <div className="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center text-gray-700 text-lg font-bold shadow-lg">
@@ -105,19 +105,19 @@ const Home = () => {
       <div className="absolute top-1/2 left-10 transform -translate-y-1/2 space-y-6 mt-20 hidden sm:block">
       <div className="text-center text-xl font-bold text-gray-600 space-y-1">
           {"JOIN TODAY".split("").map((char, index) => (
-            <div key={index} className="hover:text-[#f1ffc6] cursor-pointer hover:scale-110 duration-200">{char}</div>
+            <div key={index} className="hover:text-[#D1A609] cursor-pointer hover:scale-110 duration-200">{char}</div>
           ))}&#8594;
         </div>
       </div>
        {/* Left side  */}
       <div className="absolute top-1/2 right-10 transform -translate-y-1/2 space-y-6 mt-20 hidden sm:block">
-        <div className="bg-[#98cd05] p-4 rounded-full shadow-lg hover:bg-[#f1ffc6] cursor-pointer hover:scale-110 duration-200">
+        <div className="bg-[#D1A609] p-4 rounded-full shadow-lg hover:bg-[#F7D149] cursor-pointer hover:scale-110 duration-200">
           <FaInstagram className="text-xl text-gray-800" />
         </div>
-        <div className="bg-[#98cd05] p-4 rounded-full shadow-lg hover:bg-[#f1ffc6] cursor-pointer hover:scale-110 duration-200">
+        <div className="bg-[#D1A609] p-4 rounded-full shadow-lg hover:bg-[#F7D149] cursor-pointer hover:scale-110 duration-200">
           <FaFacebook className="text-xl text-gray-800" />
         </div>
-        <div className="bg-[#98cd05] p-4 rounded-full shadow-lg hover:bg-[#f1ffc6] cursor-pointer hover:scale-110 duration-200">
+        <div className="bg-[#D1A609] p-4 rounded-full shadow-lg hover:bg-[#F7D149] cursor-pointer hover:scale-110 duration-200">
           <FaTwitter className="text-xl text-gray-800" />
         </div>
       </div>
@@ -125,7 +125,7 @@ const Home = () => {
      {/* Modal Trigger Button */}
      <button
         onClick={toggleModal}
-        className="absolute bottom-40 right-40 bg-[#98cd05] text-gray-800 p-3 rounded-full shadow-lg hover:bg-[#f1ffc6] cursor-pointer hover:scale-110 duration-200 cursor-pointer font-bold max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:w-1/2 max-md:bottom-14" 
+        className="absolute bottom-40 right-40 bg-[#D1A609] text-gray-800 p-3 rounded-full shadow-lg hover:bg-[#F7D149] cursor-pointer hover:scale-110 duration-200 cursor-pointer font-bold max-md:left-1/2 max-md:transform max-md:-translate-x-1/2 max-md:w-1/2 max-md:bottom-14" 
       >
         Calculate Your BMI
       </button>
@@ -133,7 +133,7 @@ const Home = () => {
       {isModalOpen && (
         <div
           id="modal-background"
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end sm:items-center"
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end sm:items-center z-50"
           onClick={closeModal}
         >
           <div className="bg-white p-6 rounded-t-lg sm:rounded-lg shadow-lg w-full sm:w-1/3">
@@ -162,7 +162,7 @@ const Home = () => {
             <div className="flex justify-between">
               <button
                 onClick={calculateBmi}
-                className="w-full bg-[#98cd05] text-white p-2 rounded hover:bg-[#f1ffc6] duration-200"
+                className="w-full bg-[#D1A609] text-white p-2 rounded hover:bg-[#6F5805] duration-200"
               >
                 Submit
               </button>

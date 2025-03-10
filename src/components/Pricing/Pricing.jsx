@@ -13,7 +13,7 @@ export default function Pricing() {
           <div
             key={tier.id}
             className={classNames(
-              tier.featured ? 'relative bg-[#424735] shadow-2xl' : 'bg-[#f1ffc6] sm:mx-8 lg:mx-0',
+              tier.featured ? 'relative bg-[#6F5805] shadow-2xl' : 'bg-[#FBEAAB] sm:mx-8 lg:mx-0',
               tier.featured
                 ? ''
                 : tierIdx === 0
@@ -21,11 +21,11 @@ export default function Pricing() {
                   : 'sm:rounded-t-none lg:rounded-tr-3xl lg:rounded-bl-none',
               'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10',
             )}
-            style={tier.featured ? { background: 'linear-gradient(to bottom, #424735, black)' } : {}}
+            style={tier.featured ? { background: 'linear-gradient(to bottom, #6F5805, black)' } : {}}
           >
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? 'text-[#98cd05]' : 'text-[#424735]', 'text-base/7 font-semibold')}
+              className={classNames(tier.featured ? 'text-[#FBEAAB]' : 'text-[#6F5805]', 'text-base/7 font-semibold')}
             >
               {tier.name}
             </h3>
@@ -57,7 +57,7 @@ export default function Pricing() {
                 <li key={feature} className="flex gap-x-3">
                   <CheckIcon
                     aria-hidden="true"
-                    className={classNames(tier.featured ? 'text-[#98cd05]' : 'text-[#98cd05]', 'h-6 w-5 flex-none')}
+                    className={classNames(tier.featured ? 'text-[#FBEAAB]' : 'text-[#6F5805]', 'h-6 w-5 flex-none')}
                   />
                   {feature}
                 </li>
@@ -68,8 +68,8 @@ export default function Pricing() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-[#98cd05] text-black shadow-xs hover:bg-white focus-visible:outline-indigo-500'
-                  : 'text-black ring-1 ring-[#98cd05] ring-inset hover:ring-black focus-visible:outline-indigo-600',
+                  ? 'bg-[#FBEAAB] text-black shadow-xs hover:bg-white focus-visible:outline-indigo-500'
+                  : 'text-black ring-1 ring-[#6F5805] ring-inset hover:ring-black focus-visible:outline-[#6F5805]',
                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
               )}
             >

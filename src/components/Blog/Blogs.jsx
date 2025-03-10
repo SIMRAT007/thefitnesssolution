@@ -87,7 +87,7 @@ export default function Blogs() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className="inline-block px-4 py-2 text-sm font-medium text-[#98cd05] border border-[#98cd05] rounded-md hover:text-white hover:border-[#98cd05] hover:bg-[#98cd05] transition-colors duration-300">
+                  <div className="inline-block px-4 py-2 text-sm font-medium text-[#D1A609] border border-[#D1A609] rounded-md hover:text-white hover:border-[#98cd05] hover:bg-[#98cd05] transition-colors duration-300">
                     Read More
                   </div>
                 </motion.a>

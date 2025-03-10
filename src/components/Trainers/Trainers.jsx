@@ -14,7 +14,7 @@ const Trainers = () => {
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true }}
-              className="font-manrope text-6xl text-[#f1ffc6] leading-[4rem] mb-2 text-center lg:text-left"
+              className="font-manrope text-6xl text-[#F9DE7A] leading-[4rem] mb-2 text-center lg:text-left"
             >
               Your Fitness Goals,
             </motion.h2>
@@ -23,7 +23,7 @@ const Trainers = () => {
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true }}
-              className="font-manrope text-6xl text-[#98cd05] leading-[4rem] mb-7 text-center lg:text-left"
+              className="font-manrope text-6xl text-[#A07F07] leading-[4rem] mb-7 text-center lg:text-left"
             >
               Their Expertise
             </motion.h2>
@@ -47,7 +47,7 @@ const Trainers = () => {
                   whileInView={"visible"}
                   viewport={{ once: true }}
                   className="relative rounded-2xl overflow-hidden shadow-lg flex flex-col items-center justify-center p-4"
-                  style={{ background: 'linear-gradient(to bottom, #424735, black)' }}
+                  style={{ background: 'linear-gradient(to bottom, #6F5805, black)' }}
                 >
                   <img
                     src={trainer.image}

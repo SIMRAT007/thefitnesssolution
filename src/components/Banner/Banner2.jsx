@@ -5,7 +5,7 @@ import { SlideUp } from "../../utility/animation";
 const Banner2 = () => {
   return (
     <div className="container my-14 mt-40">
-      <div className="bg-[#98cd05] p-20 md:py-24 flex justify-center items-center rounded-full">
+      <div className="bg-[#A07F07] p-20 md:py-24 flex justify-center items-center rounded-full">
         {/* brand info */}
         <div className="flex flex-col justify-center text-center space-y-8 lg:px-44">
           <motion.h1

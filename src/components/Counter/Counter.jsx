@@ -19,7 +19,7 @@ const Counter = () => {
                         {stats.map((stat) => (
                             <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
                                 <dt className="text-base/7 text-gray-600">{stat.name}</dt>
-                                <dd className="order-first text-3xl font-semibold tracking-tight text-[#f1ffc6] sm:text-5xl">
+                                <dd className="order-first text-3xl font-semibold tracking-tight text-[#A07F07] sm:text-5xl">
                                     {stat.value}
                                 </dd>
                             </div>

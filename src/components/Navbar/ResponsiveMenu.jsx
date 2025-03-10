@@ -29,7 +29,7 @@ const ResponsiveMenu = ({ open, onClose }) => {
           onClick={handleOutsideClick} // Close on outside click
         >
           <div
-            className="text-xl font-semibold uppercase bg-[#98cd05] text-white py-10 m-3 rounded-3xl w-10/12 max-w-md shadow-lg mt-20"
+            className="text-xl font-semibold uppercase bg-[#D1A609] text-white py-10 m-3 rounded-3xl w-10/12 max-w-md shadow-lg mt-20"
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
           >
             <ul className="flex flex-col justify-center items-center gap-6">
@@ -56,7 +56,7 @@ const ResponsiveMenu = ({ open, onClose }) => {
                   )}
                 </li>
               ))}
-              <li className="px-5 py-3 rounded-3xl border-2 border-white duration-200 hover:bg-white hover:text-[#98cd05] font-semibold cursor-pointer">
+              <li className="px-5 py-3 rounded-3xl border-2 border-white duration-200 hover:bg-white hover:text-[#D1A609] font-semibold cursor-pointer">
                 <ScrollLink to="contact" smooth={true} duration={500} onClick={onClose}>
                   Contact Us
                 </ScrollLink>
